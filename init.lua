@@ -47,3 +47,6 @@ require('lazy').setup({
 
 -- colorscheme
 require('config.colorscheme').setup()
+
+-- 定义全局上下文
+_G.context = {}

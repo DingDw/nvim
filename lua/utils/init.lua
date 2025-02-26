@@ -16,7 +16,7 @@ setmetatable(M, {
 for _, level in ipairs({ "info", "warn", "error" }) do
 	M[level] = function(msg, opts)
 		opts = opts or {}
-		opts.title = opts.title or "LazyVim"
+		opts.title = opts.title or level:upper()
 		return require("lazy.core.util")[level](msg, opts)
 	end
 end

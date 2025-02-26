@@ -22,5 +22,12 @@ return {
         vim.api.nvim_create_user_command("CMakeConfigure", Utils.cmake.configure, {
             nargs = 1
         })
+        -- project
+        vim.api.nvim_create_user_command("ProjectSave", Utils.project.export_func, {
+            nargs = 1
+        })
+        vim.api.nvim_create_user_command("ProjectDelete", Utils.project.export_func, {
+            nargs = 1
+        })
     end
 }

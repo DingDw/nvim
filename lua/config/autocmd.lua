@@ -11,6 +11,15 @@ M.setup = function()
         end
     })
 
+    -- 修改c++的默认comment
+    vim.api.nvim_create_autocmd("FileType", {
+        group = vim.api.nvim_create_augroup("FixCppCommentString", { clear = true }),
+        callback = function(ev)
+          vim.bo[ev.buf].commentstring = "// %s"
+        end,
+        pattern = { "hpp", "cc", "cpp", "h", "c" },
+      })
+
     -- bigfile Snacks提供该功能,不需要自行配置
     -- vim.filetype.add({
     --     pattern = {
