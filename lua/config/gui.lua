@@ -4,12 +4,12 @@ return {
     -- vim.o.guifont = "VictorMono Nerd Font,等距更纱黑体 SC Nerd Font:h12"
     -- vim.o.guifont = "ZedMono Nerd Font,等距更纱黑体 SC Nerd Font:h12"
     -- vim.o.guifont = "GoMono Nerd Font,等距更纱黑体 SC Nerd Font:h12"
-    -- vim.o.guifont = 'FiraCode Nerd Font,等距更纱黑体 SC Nerd Font:h11'
+    -- vim.o.guifont = 'FiraCode Nerd Font,Maple Mono NF CN:h11'
     -- vim.o.guifont = 'Sarasa Term SC Nerd Font:h11'
     -- vim.o.guifont = "Sarasa Term Slab SC Nerd Font:h11"
     -- vim.o.guifont = 'CaskaydiaCove Nerd Font,等距更纱黑体 SC Nerd Font:h11'
     -- vim.o.guifont = 'Maple Mono NF CN,等距更纱黑体 SC Nerd Font:h11'
-    vim.o.guifont = 'Maple Mono NF CN:h10'
+    -- vim.o.guifont = 'Maple Mono NF CN:h10'
     -- vim.o.guifont = 'FantasqueSansM Nerd Font,等距更纱黑体 SC Nerd Font:h13'
     -- vim.o.guifont = '0xProto Nerd Font,等距更纱黑体 SC Nerd Font:h11'
     -- 透明度

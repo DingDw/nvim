@@ -12,11 +12,11 @@ return {
       styles = {
         -- Style to be applied to different syntax groups
         -- Value is any valid attr-list value for `:help nvim_set_hl`
-        comments = { italic = true },
-        keywords = { italic = true },
-        functions = { italic = true },
+        -- comments = { italic = true },
+        -- keywords = { italic = true },
+        -- functions = { italic = true },
         conditionals = { italic = true },
-        loop = { italic = false },
+        loop = { italic = true },
         variables = {},
         -- Background styles. Can be "dark", "transparent" or "normal"
         sidebars = 'dark', -- style for sidebars, see below

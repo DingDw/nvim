@@ -2,10 +2,10 @@
 setmetatable(_G, {
   __newindex = function(_, name, value)
     if rawget(_G, name) ~= nil then
-      error("Attempt to override global var: "..name, 2)
+      error('Attempt to override global var: ' .. name, 2)
     end
     rawset(_G, name, value)
-  end
+  end,
 })
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -39,11 +39,11 @@ require('utils').setup()
 require('config.user_commands').setup()
 
 -- 插件
-require('lazy').setup({
-  spec = {{ import = 'plugins' }},
+require('lazy').setup {
+  spec = { { import = 'plugins' } },
   -- automatically check for plugin updates
   checker = { enabled = false },
-})
+}
 
 -- colorscheme
 require('config.colorscheme').setup()
