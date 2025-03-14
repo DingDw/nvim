@@ -29,7 +29,12 @@ return { -- statusline
         },
         sections = {
           lualine_a = { 'mode' },
-          lualine_b = { function() return _G.context.current_project or '' end, 'branch',  },
+          lualine_b = {
+            function()
+              return _G.context.current_project or ''
+            end,
+            'branch',
+          },
 
           lualine_c = { -- Utils.lualine.root_dir(),
             -- {
@@ -95,13 +100,26 @@ return { -- statusline
               function()
                 return require('lsp-status').status()
               end,
-            }, -- {
+            },
+            -- {
             -- 	require("lazy.status").updates,
             -- 	cond = require("lazy.status").has_updates,
             -- 	color = function()
             -- 		return Utils.ui.fg("Special")
             -- 	end,
             -- },
+            {
+              'b:venv',
+              -- function()
+              --   vim.api.nvim_buf_get_var(0, 'venv')
+              --   -- print(value)
+              --   -- if ok then
+              --   --   return 'venv:' .. value
+              --   -- else
+              --   --   return ''
+              --   -- end
+              -- end,
+            },
             {
               'diff',
               symbols = {

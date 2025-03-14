@@ -26,6 +26,7 @@ style = "W400"
 # You can set a different font for fallback
 [[font.normal]]
 family = "等距更纱黑体 SC Nerd Font"
+# family = "LXGW WenKai"
 style = "Normal"
 
 # [[font.bold]]
