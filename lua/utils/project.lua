@@ -2,7 +2,7 @@ local M = {}
 
 local function open_json()
     local Path = require("plenary.path")
-    local file_path = Path:new(vim.fn.stdpath("data") .. "/projects.json")
+    local file_path = Path:new(vim.fn.stdpath("config") .. "/projects.json")
     if not file_path:exists() then
         file_path:write("[]", "w")
     end

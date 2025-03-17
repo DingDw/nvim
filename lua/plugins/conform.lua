@@ -44,6 +44,7 @@ return {
         markdown = { 'prettier' },
         python = { 'autopep8' },
         json = { 'prettier' },
+        yaml = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
