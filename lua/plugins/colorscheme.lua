@@ -12,8 +12,8 @@ return {
       styles = {
         -- Style to be applied to different syntax groups
         -- Value is any valid attr-list value for `:help nvim_set_hl`
-        -- comments = { italic = true },
-        -- keywords = { italic = true },
+        comments = { italic = true },
+        keywords = { italic = true },
         -- functions = { italic = true },
         conditionals = { italic = true },
         loop = { italic = true },
@@ -31,7 +31,9 @@ return {
       --- You can override specific color groups to use other groups or a hex color
       --- function will be called with a ColorScheme table
       ---@param colors ColorScheme
-      on_colors = function(colors) end,
+      on_colors = function(colors)
+        colors.border = colors.orange
+      end,
 
       --- You can override specific highlights to use other groups or a hex color
       --- function will be called with a Highlights and ColorScheme table
