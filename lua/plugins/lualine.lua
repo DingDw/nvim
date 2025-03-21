@@ -30,10 +30,14 @@ return { -- statusline
         sections = {
           lualine_a = { 'mode' },
           lualine_b = {
-            function()
-              return _G.context.current_project or ''
-            end,
-            'branch',
+            {
+              function()
+                return _G.context.current_project or ''
+              end,
+            },
+            {
+              'branch',
+            },
           },
 
           lualine_c = { -- Utils.lualine.root_dir(),

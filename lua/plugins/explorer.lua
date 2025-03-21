@@ -180,13 +180,13 @@ return {
             desc = 'Copy Entry Relpath',
           })
 
-          vim.keymap.set('n', 'gY', function()
+          vim.keymap.set('n', 'GY', function()
             local entry_path = MiniFiles.get_fs_entry().path
             Utils.info(string.format('Copy Path[%s]', entry_path))
             vim.fn.setreg('+', entry_path)
           end, {
             buffer = args.data.buf_id,
-            desc = 'Copy Entry Relpath',
+            desc = 'Copy Entry Fullpath',
           })
 
           vim.keymap.set('n', 'O', function()
